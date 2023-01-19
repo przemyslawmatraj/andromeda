@@ -11,8 +11,7 @@ function App() {
       frame: 0,
       frameCount: 100,
     },
-    sqeuence: (index: number) =>
-      `./churchSequence/${(index + 1).toString()}.jpg`,
+    sqeuence: (index: number) => `./gateSequence/${(index + 1).toString()}.jpg`,
     smoothEnabled: true,
     smoothness: 2,
     canvasRef,
