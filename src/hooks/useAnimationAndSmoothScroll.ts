@@ -59,7 +59,9 @@ export const useAnimationAndSmoothScroll = ({
             img.src = currentFrame(i);
             images.push(img);
           }
-          console.log(images);
+          images[0].onload = () => {
+            render();
+          };
           images[images.length - 1].onload = () => {
             render();
             resolve(true);
